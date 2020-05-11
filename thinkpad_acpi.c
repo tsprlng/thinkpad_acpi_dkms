@@ -5808,11 +5808,11 @@ static const char * const tpacpi_led_names[TPACPI_LED_NUMLEDS] = {
 
 static inline bool tpacpi_is_led_restricted(const unsigned int led)
 {
-#ifdef CONFIG_THINKPAD_ACPI_UNSAFE_LEDS
+// #/ifdef CONFIG_THINKPAD_ACPI_UNSAFE_LEDS
 	return false;
-#else
-	return (1U & (TPACPI_SAFE_LEDS >> led)) == 0;
-#endif
+// else
+//	return (1U & (TPACPI_SAFE_LEDS >> led)) == 0;
+// #/endif
 }
 
 static int led_get_status(const unsigned int led)
