@@ -1,0 +1,1 @@
+sudo tee /etc/modprobe.d/blacklist-thinkpad-acpi.conf <<< 'blacklist thinkpad_acpi'
