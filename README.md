@@ -4,6 +4,6 @@ The difference is it exposes all the laptop's LEDs in /sys/class/leds, not just 
 
 To disable thinkpad_acpi so this can take over:
 
-```shell
+```bash
 sudo tee /etc/modprobe.d/blacklist-thinkpad-acpi.conf <<< 'blacklist thinkpad_acpi'
 ```
